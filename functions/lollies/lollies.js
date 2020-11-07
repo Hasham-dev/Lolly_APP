@@ -38,7 +38,7 @@ const resolvers = {
       try {
         const result = await adminClient.query(
           q.Map(
-            q.Paginate(q.Match(q.Index("lolly"))),
+            q.Paginate(q.Match(q.Index("lolly_by_path"))),
             q.Lambda(x => q.Get(x))
           )
         )
