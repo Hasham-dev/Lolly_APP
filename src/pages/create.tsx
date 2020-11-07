@@ -70,7 +70,7 @@ const Create = () => {
     });
     useEffect(() => {
         async function runHook() {
-            const response = await fetch("https://api.netlify.com/build_hooks/5f9a99467867c005d354dcb7", {
+            const response = await fetch("https://api.netlify.com/build_hooks/5fa6e674819bc97b97ec58a3", {
                 method: "POST",
             });
 
